@@ -45,18 +45,21 @@ address {
     font-style: normal;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
-
+    padding-left: 15px;
+    padding-right: 15px;
     /*outline: 2px solid tomato;*/
 }
 
-.section {
-    padding-left: 15px;
-    padding-right: 15px;
-}
+
 
 .logo-web {
     font-family: 'Raleway', sans-serif;
@@ -91,11 +94,14 @@ address {
     letter-spacing: 0.02em;
 
     color: #212121;
+
 }
 
+
 .headr-link:hover,
-:focus {
+.headr-link:focus {
     color: var(--link-color);
+
 }
 
 .headr {
@@ -131,20 +137,22 @@ address {
 
 
 .headr-contact:hover,
-:focus {
+.headr-contact:focus {
     color: var(--link-color);
 }
 
 /*----------------------main------------------------*/
 .main {
+   
     height: 600px;
-    background: #2F303A;
+    /*background: #2F303A;*/
     padding-top: 200px;
     padding-bottom: 200px;
-
-
-}
-
+    outline: 1px solid black;
+background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/general_background.png");
+background-position: center;
+background-size: cover;}
+    
 .main-button {
 
     font-weight: 700;
@@ -167,9 +175,9 @@ address {
 }
 
 .main-button:hover,
-:focus {
+.main-button:focus {
     color: #FFFFFF;
-    background-color: var(--link-color)
+    background-color: var(--link-color);
 }
 
 .main-h1 {
@@ -186,10 +194,6 @@ address {
     color: #FFFFFF;
 
 
-}
-
-.about {
-    padding-top: 94px;
 }
 
 .about-list {
@@ -220,13 +224,8 @@ address {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-}
-
-.img {
-    padding-top: 94px;
-    padding-bottom: 54px;
-}
-
+    }
+.main-h2-none{padding-top:0;}
 .main-paragraph {
     font-size: 14px;
     line-height: 1.71;
@@ -242,6 +241,7 @@ address {
 .pictures {
     display: flex;
     justify-content: center;
+
 }
 
 .pictures .pictures-items+.pictures-items {
@@ -250,6 +250,10 @@ address {
 
 .team-list .team-items+.team-items {
     margin-left: 30px;
+}
+
+.team-studio {
+    padding-bottom: 94px;
 }
 
 .team-list {
@@ -293,9 +297,9 @@ address {
 
 /*----------------------footer------------------------*/
 .footer {
-    padding-top: 60px;
     padding-bottom: 60px;
-    height: 252px;
+    padding-top: 60px;
+    
     background: #2F303A;
 }
 
@@ -322,7 +326,7 @@ address {
 }
 
 .footer-contact:hover,
-:focus {
+.footer-contact:focus {
     color: var(--link-color);
 }
 
@@ -343,13 +347,15 @@ address {
 
 /*----------------------portfolio------------------------*/
 .line {
-
+    display: flex;
     border-bottom: 1px solid #ECECEC;
+    height: 80px;
 }
 
 .portfolio-btn-list {
     display: flex;
-    padding: 106px 22px;
+    padding-left: 22px;
+    padding-right: 22px;
     justify-content: center;
 }
 
@@ -370,37 +376,36 @@ address {
     background: #F5F4FA;
     border-radius: 4px;
     border: transparent;
+    padding: 6px 22px;
 
 }
 
 .main-portfolio-btn:hover,
-:focus {
+.main-portfolio-btn:focus {
     background-color: var(--link-color);
     color: white;
 }
 
-.pictures {
-    padding-bottom: 94px;
-    
-}
-
 .portfolio-list {
-
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-
+    justify-content: space-between;
 }
 
 .portfolio-items {
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
+    margin-bottom: 30px;
 
 }
 
+.nomargin-portfolio {
+    margin-bottom: -30px;
+}
+
 .pictures-text {
-    padding-left: 24px;
-    padding-top: 30px;
+    padding: 20px 24px;
 
 }
 
