@@ -127,12 +127,23 @@ address {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
-    padding-left: 50px;
+    padding-left: 30px;
+
+
 
 }
 
+.email {
+    margin-right: 10px;
+    vertical-align: middle;
+
+}
+
+
 .contact {
+    display: inline-block;
     margin-left: auto;
+
 }
 
 
@@ -143,16 +154,17 @@ address {
 
 /*----------------------main------------------------*/
 .main {
-   
+
     height: 600px;
-    /*background: #2F303A;*/
+    background: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
     outline: 1px solid black;
-background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/general_background.png");
-background-position: center;
-background-size: cover;}
-    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/general_background.png");
+    background-position: center;
+    background-size: cover;
+}
+
 .main-button {
 
     font-weight: 700;
@@ -213,7 +225,6 @@ background-size: cover;}
     width: 270px;
     height: 16px;
     color: var(--h3-color);
-
 }
 
 .main-h2 {
@@ -224,8 +235,19 @@ background-size: cover;}
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+}
+
+.div {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
     }
-.main-h2-none{padding-top:0;}
+
+.main-h2-none {
+    padding-top: 0;
+}
+
 .main-paragraph {
     font-size: 14px;
     line-height: 1.71;
@@ -299,7 +321,7 @@ background-size: cover;}
 .footer {
     padding-bottom: 60px;
     padding-top: 60px;
-    
+
     background: #2F303A;
 }
 
