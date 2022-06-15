@@ -130,27 +130,21 @@ address {
     padding-left: 30px;
 }
 
-.email {
-    margin-right: 10px;
-    fill: currentColor;
-    vertical-align: middle;
-
+.contact-list {
+    display: flex;
+    margin-left: auto;
 }
 
-.contact {
-    display: inline-block;
-    margin-left: auto;
+.icon-contact {
+    margin-right: 10px;
+    vertical-align: middle;
+    fill: currentColor;
 }
 
 .headr-contact:hover,
 .headr-contact:focus {
     color: var(--link-color);
 }
-
-/*.email:hover,
-.email:focus {
-    color: var(--link-color);
-}*/
 
 /*----------------------main------------------------*/
 .main {
@@ -361,16 +355,11 @@ address {
     background-color: #2196F3;
 }
 
-.client {}
+.network-icon {
+    fill: currentColor;
+}
 
-.client-h2 {
-    font-style: Bold;
-    font-size: 36px;
-    line-height: 42px;
-    Line-height: 100%;
-    align-items: center;
-    letter-spacing: 3%;
-    color:var(----h3-color);}
+.client {}
 
 .client-list {
     display: flex;
@@ -391,7 +380,9 @@ address {
     color: #AFB1B8;
 }
 
-.client-icon {}
+.client-icon {
+    fill: currentColor;
+}
 
 .client-link:hover,
 .client-link:focus {
@@ -403,10 +394,12 @@ address {
 .footer {
     padding-bottom: 60px;
     padding-top: 60px;
-
     background: #2F303A;
 }
 
+.footer-all {
+    display: flex;
+}
 
 .address {
     font-style: normal;
@@ -448,6 +441,53 @@ address {
 .tel {
     margin-top: 9px;
 }
+
+.footer-link {
+    padding-top: 12px;
+    margin-left: 70px;
+    border: none;
+    min-width: 206px;
+    display: block;
+}
+
+.footer-h3 {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer-items {
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #44454E;
+
+}
+
+.footer-social:hover,
+.footer-social:focus {
+    background-color: #2196F3;
+    color: #000000;
+}
+
+.footer-icon {
+    fill: #ffffff;
+}
+
 
 /*----------------------portfolio------------------------*/
 .line {
@@ -494,7 +534,12 @@ address {
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+
+}
+
+.portfolio-items {
+    margin: 15px;
+    width: calc(100% / 3 - 30px);
 }
 
 .portfolio-items {
