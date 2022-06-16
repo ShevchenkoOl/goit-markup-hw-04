@@ -126,8 +126,20 @@ address {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
     color: #757575;
-    padding-left: 30px;
+    /*padding-top: 32px;
+    padding-bottom: 32px;*/
+
+}
+
+.headr-con {
+    background-size: 16px auto;
+    height: 16px;
+}
+
+.headr-phone {
+    margin-left: 30px;
 }
 
 .contact-list {
@@ -154,7 +166,7 @@ address {
     padding-top: 200px;
     padding-bottom: 200px;
     outline: 1px solid black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/general_background.png");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/general_background.png");
     background-position: center;
     background-size: cover;
 }
@@ -165,8 +177,8 @@ address {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    color: #212121;
-    background: #F5F4FA;
+    color: #FFFFFF;
+    background: var(--link-color);
     border-radius: 4px;
     padding: 10px 32px;
 
@@ -180,11 +192,11 @@ address {
     display: block;
 }
 
-.main-button:hover,
+/*.main-button:hover,
 .main-button:focus {
     color: #FFFFFF;
     background-color: var(--link-color);
-}
+}*/
 
 .main-h1 {
     margin: auto;
@@ -282,6 +294,10 @@ address {
 
 .team-list {
     display: flex;
+}
+
+.our-team {
+    background-color: #F5F4FA;
 }
 
 .team-position {
@@ -500,7 +516,9 @@ address {
     justify-content: center;
 }
 
-
+.portfolio-btn {
+    margin-bottom: 50px;
+}
 
 .portfolio-btn-list .portfolio-btn-items+.portfolio-btn-items {
     margin-left: 8px;
@@ -528,11 +546,12 @@ address {
 }
 
 .portfolio-list {
-    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-
+    margin: -15px;
 }
+
+
 
 .portfolio-items {
     margin: 15px;
@@ -544,10 +563,6 @@ address {
     border: 1px solid #EEEEEE;
     margin-bottom: 30px;
 
-}
-
-.nomargin-portfolio {
-    margin-bottom: -30px;
 }
 
 .pictures-text {
